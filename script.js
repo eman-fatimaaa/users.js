@@ -8,6 +8,7 @@ const users = [
             street: "Sunset Boulevard",
             number: 12,
             house: true,
+			male: true,
         },
         role: "Web Developer",
     },
@@ -19,6 +20,7 @@ const users = [
             street: "Ocean Drive",
             number: 45,
             house: false,
+			male: false,
         },
         role: "Graphic Designer",
     },
@@ -30,6 +32,7 @@ const users = [
             street: "Main Street",
             number: 78,
             house: true,
+			male: true,
         },
         role: "Product Manager",
     },
@@ -41,6 +44,7 @@ const users = [
             street: "Elm Street",
             number: 22,
             house: true,
+			male: false,
         },
         role: "UX Designer",
     },
@@ -52,6 +56,7 @@ const users = [
             street: "Cedar Road",
             number: 19,
             house: false,
+			male: true,
         },
         role: "Data Analyst",
     },
@@ -63,6 +68,7 @@ const users = [
             street: "Willow Lane",
             number: 56,
             house: true,
+			male: false,
         },
         role: "DevOps Engineer",
     },
@@ -74,6 +80,7 @@ const users = [
             street: "Maple Drive",
             number: 89,
             house: true,
+			male: true,
         },
         role: "Backend Developer",
     },
@@ -85,6 +92,7 @@ const users = [
             street: "Birch Avenue",
             number: 67,
             house: false,
+			male: false,
         },
         role: "Marketing Specialist",
     },
@@ -96,6 +104,7 @@ const users = [
             street: "Pine Street",
             number: 102,
             house: true,
+			male: true,
         },
         role: "Mobile Developer",
     },
@@ -107,6 +116,7 @@ const users = [
             street: "Cherry Lane",
             number: 15,
             house: false,
+			male: false,
         },
         role: "Content Creator",
     },
@@ -118,6 +128,7 @@ const users = [
             street: "Ash Boulevard",
             number: 48,
             house: true,
+			male: true,
         },
         role: "Full Stack Developer",
     }
@@ -137,7 +148,7 @@ users.forEach(user => {
     cardImage.classList.add("card-image");
     const img = document.createElement("img");
 
-	if(user.userName == "Charlie" || user.userName == "Frank" || user.userName == "Henry" || user.userName == "Jack" || user.userName == "Leo")
+	if(user.address.male == true)
 		img.src = "./assets/02.jpg";
 	else
 		img.src = "./assets/01.jpg";
